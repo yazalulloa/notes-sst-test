@@ -1,5 +1,36 @@
 ### GET request to example server
-GET https://examples.http-client.intellij.net/get
-    ?generated-in=IntelliJ IDEA
+
+POST {{host}}/notes
+Content-Type: application/json
+
+{
+  "content": "Hello World",
+  "attachment": "hello.jpg"
+}
 
 ###
+GET {{host}}/notes/eac9fb50-42ee-11ef-b552-03be4da37d81
+
+###
+
+###
+
+GET {{host}}/notes
+###
+
+###
+PUT {{host}}/notes/7b20cc30-4301-11ef-b62a-1f387db417a9
+Content-Type: application/json
+
+{
+  "content": "TEST-New World",
+  "attachment": "TEST-new.jpg"
+}
+###
+
+###
+DELETE {{host}}/notes/eac9fb50-42ee-11ef-b552-03be4da37d81
+
+###
+
+
