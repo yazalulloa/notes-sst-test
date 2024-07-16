@@ -5,7 +5,7 @@ import { ApiStack } from "./stacks/ApiStack";
 export default {
   config(_input) {
     return {
-      name: "notes",
+      name: "notes-sst-test",
       region: "us-east-1",
     };
   },

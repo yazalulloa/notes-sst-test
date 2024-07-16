@@ -19,7 +19,7 @@ GET {{host}}/notes
 ###
 
 ###
-PUT {{host}}/notes/7b20cc30-4301-11ef-b62a-1f387db417a9
+PUT {{host}}/notes/73517890-43b7-11ef-8045-db3ae0805ccb
 Content-Type: application/json
 
 {
@@ -29,7 +29,7 @@ Content-Type: application/json
 ###
 
 ###
-DELETE {{host}}/notes/eac9fb50-42ee-11ef-b552-03be4da37d81
+DELETE {{host}}/notes/7a1298d0-43b7-11ef-8045-db3ae0805ccb
 
 ###
 
