@@ -6,7 +6,7 @@ export function ApiStack({stack}: StackContext) {
   const STRIPE_SECRET_KEY = new Config.Secret(stack, "STRIPE_SECRET_KEY");
   // Create the API
   const api = new Api(stack, "Api", {
-
+    cors: true,
     defaults: {
       authorizer: "iam",
       function: {

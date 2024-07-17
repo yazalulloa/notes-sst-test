@@ -1,4 +1,4 @@
-import { Context, APIGatewayProxyEvent } from "aws-lambda";
+import {APIGatewayProxyEvent, Context} from "aws-lambda";
 
 export default function handler(
     lambda: (evt: APIGatewayProxyEvent, context: Context) => Promise<string>
@@ -21,6 +21,10 @@ export default function handler(
     return {
       body,
       statusCode,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": true,
+      },
     };
   };
 }
