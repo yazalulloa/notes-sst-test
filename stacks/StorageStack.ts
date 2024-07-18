@@ -1,7 +1,6 @@
-import { StackContext, Table } from "sst/constructs";
-import { Bucket, StackContext, Table } from "sst/constructs";
+import {Bucket, StackContext, Table} from "sst/constructs";
 
-export function StorageStack({ stack }: StackContext) {
+export function StorageStack({stack}: StackContext) {
   // Create an S3 bucket
   const bucket = new Bucket(stack, "Uploads", {
     cors: [
@@ -20,7 +19,7 @@ export function StorageStack({ stack }: StackContext) {
       userId: "string",
       noteId: "string",
     },
-    primaryIndex: { partitionKey: "userId", sortKey: "noteId" },
+    primaryIndex: {partitionKey: "userId", sortKey: "noteId"},
   });
 
   return {
