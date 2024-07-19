@@ -20,7 +20,6 @@ export default function Home() {
       }
 
       try {
-        console.log("API loadNotes " + isAuthenticated);
         const notes = await loadNotes();
         setNotes(notes);
       } catch (e) {
@@ -34,7 +33,6 @@ export default function Home() {
   }, [isAuthenticated]);
 
   function loadNotes() {
-    console.log("API loadNotes");
     return API.get("notes", "/notes", {});
   }
 
